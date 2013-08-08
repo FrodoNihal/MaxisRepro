@@ -25,22 +25,5 @@ public class Insertionsort {
 		}
 		
 		return unsortiertesArray;
-	}
-	
-	public static void arrayAusgeben(int[] array){
-		
-		for(int i = 0 ; i < array.length ; ++i){
-			
-			System.out.print("[ "+array[i]+" ] ");			
-		}		
-		System.out.println();
-	}
-	
-	public static void zufälligesBefüllen(int [] array){
-		
-		for(int i = 0 ; i<array.length ; ++i){
-						
-			array[i] = (int) Math.round((Math.random()*100));
-		}
-	}
+	}	
 }
