@@ -5,7 +5,6 @@
  */
 public class Insertionsort {
   
-  
   public static int[] insertionSort(int[] unsortiertesArray){
     
     int zwischenvariable = 0;

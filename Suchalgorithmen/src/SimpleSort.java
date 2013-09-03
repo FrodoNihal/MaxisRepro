@@ -1,24 +1,23 @@
 /**
 * @author Chris-L. Junge
+* Umgeschrieben: Maximilian Scholz
 */
 public class SimpleSort {
-  public static void process(double[] vValues)
-  {
-    for (int i = 0; i < vValues.length; i++) {
+	
+  public static int[] simpleSort(int[] vValues){
+	  
+    for (int i = 0; i < vValues.length; i++) {    	
       for (int j = i + 1; j < vValues.length; j++) {
-        if(vValues[i] > vValues[j])
-        {
-          swap(vValues, i, j);
+    	  
+        if(vValues[i] > vValues[j]){
+        	          
+          int dblTemp = vValues[i];
+          vValues[i] =  vValues[j];
+          vValues[j] =  dblTemp;          
         }
-        else { }
       }
     }
-  }
-  
-  private static void swap(double[] vValues, int i, int j)
-  {
-    double dblTemp = vValues[i];
-    vValues[i] =  vValues[j];
-    vValues[j] =  dblTemp;
+    
+    return vValues;
   }
 }
